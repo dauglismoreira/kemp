@@ -57,6 +57,7 @@ export const Header = () => {
         </div>
       </div>
       {/* <div className="h-[88px] w-full"></div> */}
+      
 
       <MenuBar open={openMenuMobile} onClose={() => setOpenMenuMobile(false)}/>
 
