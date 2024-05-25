@@ -1,0 +1,24 @@
+.option-button-container{
+  @apply
+  flex gap-2 flex-col
+}
+
+.option-button-container .options-content{
+  @apply
+  flex gap-4 mb-4
+}
+
+.option-button-container span{
+  @apply
+  w-14 h-14 border border-darkBlue flex items-center justify-center text-lg text-darkBlue transition font-primary cursor-pointer
+}
+
+.option-button-container span.selected{
+  @apply
+  bg-darkBlue text-white
+}
+
+.option-button-container h4{
+  @apply
+  text-darkBlue uppercase font-semibold font-primary text-sm
+}

@@ -1,0 +1,45 @@
+.consultants-container{
+  @apply
+  mt-32 lg:mt-52 max-w-[1412px] mx-auto  px-4 2xl:px-0
+}
+
+.consultants-container .content{
+  @apply
+  grid gap-8 mb-32
+}
+
+@media(min-width:560px){
+  .consultants-container .content{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+.consultants-container h1{
+  @apply
+  text-darkBlue font-primary font-semibold text-lg lg:text-3xl mb-8 lg:mb-28
+}
+
+.consultants-container .consultants-card{
+  @apply
+  border-b border-darkBlue max-w-max
+}
+
+.consultants-container .consultants-card img{
+  @apply
+  w-[341px] h-[341px] max-w-full object-cover
+}
+
+.consultants-container .consultants-card h3{
+  @apply
+  text-2xl font-primary text-darkBlue font-semibold pt-6 pb-2 px-2
+}
+
+.consultants-container .consultants-card p{
+  @apply
+  text-darkGray pb-6 px-2
+}
+
+.consultants-container .high-post{
+  @apply
+  my-20
+}

@@ -1,0 +1,41 @@
+#catalog.section{
+  @apply
+  w-full py-32 lg:pt-48 lg:pb-40
+}
+
+#catalog.section .container{
+  @apply
+  w-full max-w-[1412px] mx-auto
+}
+
+#catalog.section .container .content{
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+  @apply
+  grid gap-4 flex-col lg:flex-row px-4 2xl:px-0
+}
+
+#catalog .filters-container{
+  @apply
+  -mt-2 flex justify-between flex-col lg:flex-row
+}
+
+#catalog .filters-container .advanced-filters{
+  @apply
+  flex gap-2 items-center cursor-pointer ml-4 lg:ml-0 mb-4 lg:mb-0 lg:mt-4 lg:mt-0 whitespace-nowrap
+}
+
+#catalog .filters-container .advanced-filters span{
+  @apply
+  text-regularGray uppercase underline
+}
+
+#catalog .filters-container .advanced-filters:hover span{
+  @apply
+  text-darkBlue
+}
+
+#catalog .filters-container .advanced-filters svg{
+  @apply
+  w-6 h-6 fill-darkBlue
+}

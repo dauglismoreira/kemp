@@ -1,0 +1,69 @@
+.general-contact-form{
+  @apply
+  lg:my-20
+}
+
+.general-contact-container{
+  @apply
+  w-full max-w-[1412px] mx-auto
+}
+
+.general-contact-container .general-contact-title h3{
+  @apply
+  text-xl lg:text-3xl text-darkBlue font-primary font-semibold px-4 2xl:px-0
+}
+
+.general-contact-container .general-contact-content{
+  @apply
+  max-w-[938px] my-12 lg:my-20 px-4 2xl:px-0
+}
+
+.general-contact-container .general-contact-content p{
+  @apply
+  text-regularGray font-secondary mb-8
+}
+
+.general-contact-container .general-contact-content label{
+  @apply
+  text-regularGray font-secondary font-semibold
+}
+
+
+.general-contact-form{
+  @apply
+  flex gap-4 flex-col lg:flex-row px-0 2xl:px-0
+}
+
+.general-contact-form .contact-input-container{
+  @apply
+  w-full max-w-[938px] flex flex-col gap-2
+}
+
+.general-contact-form .contact-input-container .contact-input-row{
+  @apply
+  flex gap-4 min-w-full flex-col lg:flex-row
+}
+
+.general-contact-form .contact-input-container .contact-input-col{
+  flex:1;
+}
+
+.general-contact-container form{
+  @apply
+  mb-40
+}
+
+.general-contact-form .contact-input-container .contact-input-row.mobile{
+  @apply
+  flex lg:hidden mb-8 lg:pt-60
+}
+
+.general-contact-form .contact-input-sidebar{
+  @apply
+  hidden lg:block
+}
+
+.contact-input-sidebar.desktop{
+  @apply
+  pt-52
+}

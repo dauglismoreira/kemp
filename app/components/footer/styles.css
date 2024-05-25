@@ -1,0 +1,166 @@
+.footer{
+  @apply
+  bg-darkBlue
+}
+
+.footer .content{
+  @apply
+  w-full max-w-[1412px] mx-auto flex gap-4 pt-8 flex-col lg:flex-row pb-8 lg:pb-0
+}
+
+.footer .content .signature{
+  flex:1;
+
+  @apply
+  py-14
+}
+
+.footer .content .contact-menu{
+  flex:5;
+
+  @apply
+  lg:py-14 flex flex-col gap-8 px-4
+}
+
+.footer .content .contact-menu .contact-container{
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+  @apply
+  grid gap-8
+}
+
+.footer .content .contact-menu .menu-container{
+  @apply
+  flex gap-8 lg:gap-20 items-start pt-16 lg:pt-8 flex-col lg:flex-row
+}
+
+.footer .signature{
+  @apply
+  flex flex-col items-center gap-8
+}
+
+.footer .signature h4{
+  @apply
+  text-white text-xs font-secondary
+}
+
+.footer .menu-container .menu h3{
+  @apply
+  text-white text-sm font-semibold mb-8 font-primary text-center lg:text-left
+}
+
+.footer .menu-container .menu li{
+  text-decoration:none!important;
+  
+  @apply
+  text-white text-xs lg:text-sm mb-6 font-secondary
+}
+
+.footer .menu-container .menu li.mobile{
+  text-decoration:none!important;
+  
+  @apply
+  block lg:hidden
+}
+
+@media(max-width:1024px){
+  .footer .menu-container{
+    @apply
+    border-t border-softBlue
+  }
+
+  .footer .menu-container .menu{
+    @apply
+    w-full
+  }
+
+  .footer .menu-container .menu.desktop{
+    @apply
+    hidden
+  }
+
+  .footer .menu-container .menu ul{
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    @apply
+    grid
+  }
+
+  .footer .menu-container .menu ul.social{
+    @apply
+    flex gap-4
+  }
+
+  .footer .menu-container .menu ul.social li{
+    @apply
+    flex-1 text-center lg:text-left
+  }
+}
+
+.footer .contact-container .box{
+  @apply
+  text-white text-center lg:text-left mb-4
+}
+
+.footer .contact-container .box h3{
+  @apply
+  text-sm font-primary uppercase font-semibold lg:max-w-[240px] h-12
+}
+
+.footer .contact-container .box p{
+  @apply
+  text-sm font-secondary
+}
+
+.footer .contact-container .box h5{
+  @apply
+  font-primary text-lg font-semibold mt-4
+}
+
+.footer .contact-container .box h5.mobile{
+  @apply
+  lg:hidden whitespace-pre-line
+}
+
+.footer .contact-container .box h5.desktop{
+  @apply
+  hidden lg:block
+}
+
+.footer .policy-container{
+  @apply
+  border-t border-softBlue 
+}
+
+.footer .policy{
+  @apply
+  flex mx-auto items-center  max-w-[1412px] px-4 2xl:px-0
+}
+
+.footer .policy-content{
+  @apply
+  w-full max-w-[1412px] mx-auto flex gap-4 pt-8
+}
+
+.footer .policy .policy-content{
+  flex:5;
+
+  @apply
+  pb-8 text-white flex justify-between w-full flex-col lg:flex-row gap-8 lg:gap-0
+}
+
+.footer .policy .fix-margin{
+  @apply
+  flex-1 hidden lg:block
+}
+
+.footer .policy .policy-links{
+  @apply
+  flex gap-4 lg:gap-12 w-full justify-between lg:justify-start lg:w-auto
+}
+
+.footer .policy .policy-links span,
+.footer .policy .right span{
+  @apply
+  font-secondary text-sm block
+}

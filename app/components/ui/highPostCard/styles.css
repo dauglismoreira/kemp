@@ -1,0 +1,39 @@
+.high-post-card{
+  @apply
+  w-full cursor-pointer lg:h-[369px] flex flex-col-reverse lg:flex-row gap-4
+}
+
+.high-post-card img{
+  @apply
+  lg:flex-1 max-w-full w-full h-[243px] lg:h-[369px] object-cover
+}
+
+.high-post-card .high-post-card-info{
+  @apply
+  lg:flex-1 h-full w-full border-b border-darkBlue py-4 flex flex-col justify-between pb-8
+}
+
+.high-post-card .high-post-card-info .high-post-card-title{
+  @apply
+  flex flex-col gap-4
+}
+
+.high-post-card .high-post-card-info .high-post-card-title p{
+  @apply
+  text-regularGray font-secondary
+}
+
+.high-post-card .high-post-card-info .high-post-card-title small{
+  @apply
+  text-regularGray uppercase text-sm font-primary
+}
+
+.high-post-card .high-post-card-info .high-post-card-title h2{
+  @apply
+  text-darkBlue text-2xl font-primary font-semibold
+}
+
+.high-post-card .high-post-card-info button{
+  @apply
+  flex items-center uppercase text-darkBlue font-primary gap-2 font-semibold mt-8 lg:mt-0
+}

@@ -1,0 +1,128 @@
+form fieldset{
+  @apply
+  flex flex-col gap-2 mb-4
+}
+
+form fieldset label{
+  @apply
+  text-sm text-darkBlue font-primary font-semibold
+}
+
+form fieldset input, form fieldset textarea{
+  @apply
+  border-b border-darkBlue outline-none
+}
+
+form .select-container{
+  @apply
+  border border-darkBlue px-4 h-12 flex items-center w-full
+}
+
+form .select-container select{
+  @apply
+  h-full w-full bg-transparent text-darkBlue font-primary uppercase
+}
+
+form .authorize-check{
+  @apply
+  flex gap-2 items-start flex-wrap mb-4
+}
+
+form .authorize-check input{
+  @apply
+  mt-1 w-4 h-4
+}
+
+form .authorize-check label{
+  max-width:calc(100% - 30px);
+
+  @apply
+  text-regularGray text-sm font-secondary
+}
+
+form .authorize-check label a{
+  @apply
+  text-darkBlue underline font-semibold
+}
+
+form .att-options{
+  @apply
+  flex flex-col gap-2
+}
+
+form .att-options label{
+  @apply
+  text-sm text-darkGray font-primary font-semibold
+}
+
+form .att-options .check-container{
+  @apply
+  flex gap-2 items-center
+}
+
+form .att-options .check-container .custom-check{
+  @apply
+  w-8 h-8 border rounded-sm border-darkBlue flex items-center justify-center
+}
+
+form .att-options .check-container .custom-check svg{
+  @apply
+  text-white w-8 h-8
+}
+
+form .att-options .check-container .custom-check.active{
+  @apply
+  bg-darkBlue
+}
+
+form button{
+  @apply
+  border-b border-darkBlue bg-transparent text-darkBlue font-primary w-full lg:w-[221px] h-[49px] flex items-center justify-center
+  font-semibold mt-4
+}
+
+form .app-input{
+  @apply
+  h-[50px] px-6 flex gap-2 items-center text-darkBlue uppercase font-secondary border-b border-darkBlue cursor-pointer
+}
+
+form fieldset .description{
+  @apply
+  text-xs text-regularGray mx-14
+}
+
+form fieldset .file-name{
+  @apply
+  text-xs text-regularGray
+}
+
+form .reason-options{
+  @apply
+  flex flex-col gap-2
+}
+
+form .reason-options label{
+  @apply
+  text-darkBlue font-primary text-sm font-semibold uppercase my-4
+}
+
+form .reason-options .custom-button{
+  @apply
+  border w-full md:w-auto px-4 min-w-[200px] border-darkBlue h-12 flex font-primary items-center justify-center text-darkBlue
+  cursor-pointer
+}
+
+form .reason-options .button-container{
+  @apply
+  flex gap-4 mb-8 flex-wrap
+}
+
+form .reason-options .custom-button:hover{
+  @apply
+  bg-darkBlue text-white
+}
+
+form .reason-options .custom-button.selected{
+  @apply
+  bg-darkBlue text-white
+}

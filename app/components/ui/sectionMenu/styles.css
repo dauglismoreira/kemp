@@ -1,0 +1,15 @@
+.menu-container{
+  @apply
+  inline-flex lg:flex items-center gap-4 list-none mt-4 mb-0 lg:my-6 uppercase text-regularGray underline cursor-pointer
+  overflow-auto w-full pb-4 lg:pb-0 px-4 2xl:px-0
+}
+
+.menu-container li{
+  @apply
+  whitespace-nowrap font-secondary
+}
+
+.menu-container li.active{
+  @apply
+  text-darkBlue
+}

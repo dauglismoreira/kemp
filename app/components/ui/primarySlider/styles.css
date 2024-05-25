@@ -1,0 +1,62 @@
+.primarySlider .primary-slide-item{
+  @apply
+  w-full h-[780px] lg:h-[848px] bg-center bg-cover
+  bg-gray-800
+}
+
+.primary-slide-item .slide-item-container{
+  @apply
+  flex max-w-[1412px] mx-auto justify-center flex-col h-full gap-8 px-4 items-center lg:items-start
+}
+
+.primary-slide-item .slide-item-container h3{
+  @apply
+  uppercase font-primary text-white text-sm text-sm lg:text-base text-center lg:text-left
+}
+
+.primary-slide-item .slide-item-container h1{
+  @apply
+  font-primary text-white font-extrabold text-3xl lg:text-5xl max-w-[720px] tracking-wider leading-snug
+  text-center lg:text-left px-4 lg:px-0
+}
+
+.primary-slide-item .slide-item-container a{
+  @apply
+  flex gap-2 items-center font-secondary text-white uppercase max-w-max 
+}
+
+.primary-slide-item .slide-item-container a svg{
+  @apply
+  w-6 h-6
+}
+
+.slider-container{
+  @apply
+  relative
+}
+
+.slider-container .slider-navigation{
+  @apply
+  absolute bottom-0 left-0 lg:bg-white z-30 w-full lg:w-[356px] h-[64px] lg:h-[112px] flex gap-2 items-center justify-center
+  lg:justify-around 
+}
+
+.slider-container .slider-navigation .active-slide{
+  @apply
+  font-primary text-darkBlue text-2xl hidden lg:block
+}
+
+.slider-container .slider-navigation .navigation{
+  @apply
+  block relative max-w-full lg:max-w-[180px] pl-8
+}
+
+.slider-container .slider-navigation .navigation span{
+  @apply
+  rounded-full bg-regularGray w-2 h-2 block font-primary
+}
+
+.slider-container .arrow .button-next{
+  @apply
+  cursor-pointer h-16 w-20 hidden lg:block
+}

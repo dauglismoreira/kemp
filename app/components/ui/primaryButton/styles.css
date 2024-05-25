@@ -1,0 +1,4 @@
+.primary-button{
+  @apply
+  h-[56px] px-8 text-lg font-secondary
+}

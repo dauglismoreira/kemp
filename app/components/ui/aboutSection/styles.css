@@ -1,0 +1,98 @@
+.aboutSection{
+  @apply
+  bg-darkBlue w-full py-8 lg:py-40
+}
+
+.aboutSection .contentContainer{
+  @apply
+  w-full max-w-[1412px] mx-auto flex gap-12 flex-col lg:flex-row px-4 2xl:px-0
+}
+
+.aboutSection .contentContainer .content{
+  flex:4;
+}
+
+.aboutSection .contentContainer .content p{
+  @apply
+  text-white mb-8 max-w-[600px]
+}
+
+.aboutSection .contentContainer .content span{
+  @apply
+  text-white
+}
+
+.aboutSection .contentContainer .cta{
+  @apply
+  w-[160px] justify-between items-center cursor-pointer
+}
+
+.aboutSection .contentContainer .cta.desktop{
+  @apply
+  hidden lg:flex
+}
+
+.aboutSection .contentContainer .cta.mobile{
+  @apply
+  lg:hidden flex
+}
+
+.aboutSection .contentContainer .cta span{
+  @apply
+  uppercase block text-white
+}
+
+.aboutSection .contentContainer .title{
+  flex:1;
+}
+
+.aboutSection .contentContainer .title h3{
+  @apply
+  text-white text-sm lg:text-2xl font-semibold uppercase
+}
+
+.aboutSection .contentContainer .actions{
+  flex:2;
+
+  @apply
+  -mt-4
+}
+
+.aboutSection .contentContainer .actions li{
+  @apply
+  text-white list-none uppercase h-16 flex items-center border-b justify-between cursor-pointer
+}
+
+.moreContainer{
+  @apply
+  w-full max-w-[1412px] mx-auto flex gap-4 -mb-[960px] lg:-mb-80 mt-20 flex-col lg:flex-row
+}
+
+.moreContainer .box{
+  @apply
+  bg-white lg:w-[460px] h-[360px] border-b border-darkBlue py-20 px-12 flex flex-col justify-between cursor-pointer
+}
+
+@media(max-width:1024px){
+  .moreContainer .box{
+    width:calc(100% - 28px);
+
+    @apply
+    mx-auto
+  }
+}
+
+.moreContainer .box h3{
+  @apply
+  text-2xl text-darkBlue font-semibold font-primary
+}
+
+.moreContainer .box span{
+  @apply
+  uppercase text-darkBlue font-semibold font-primary
+}
+
+.aboutSection .moreContainer .cta{
+  @apply
+  w-[160px] justify-between items-center flex cursor-pointer
+}

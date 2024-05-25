@@ -1,0 +1,24 @@
+.progress-bar-container{
+  @apply
+  w-full py-4
+}
+
+.progress-bar-container h5{
+  @apply
+  text-softBlue font-secondary
+}
+
+.progress-bar-container p{
+  @apply
+  text-white font-primary pt-2 font-semibold
+}
+
+.progress-bar-container .progress-bar{
+  @apply
+  w-full relative rounded-full bg-softBlue
+}
+
+.progress-bar-container .progress-bar span{
+  @apply
+  absolute top-0 left-0 bg-ultraSoftGray block z-10 rounded-full transition
+}

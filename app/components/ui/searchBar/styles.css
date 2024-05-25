@@ -1,0 +1,112 @@
+.searchBar{
+  transform:translate(0,-150%);
+
+  @apply
+  w-full fixed h-full inset-0 bg-white z-50 transition
+}
+
+.searchBar.open{
+  transform:translate(0,0);
+}
+
+.searchBar .close{
+  @apply
+  absolute top-4 right-4 lg:top-6 lg:right-8
+}
+
+.searchBar .close svg{
+  @apply
+  w-8 h-8 cursor-pointer stroke-darkBlue
+}
+
+.searchBar .search-content{
+  @apply
+  flex flex-wrap pt-20 h-full px-4
+}
+
+.searchBar .search-content .search-result{
+  flex:4;
+
+  @apply
+  2xl:pl-[254px] 2xl:pr-[160px]
+}
+
+.searchBar .search-content .filters{
+  @apply
+  mb-8 flex justify-between flex-col lg:flex-row
+}
+
+.searchBar .search-content .search-result .searchInput{
+  @apply
+  flex gap-2 border-b border-regularGray w-max min-w-full lg:min-w-[370px] justify-between items-center
+}
+
+.searchBar .search-content .search-result .searchInput input{
+  width:calc(100% - 40px);
+
+  @apply
+  h-12 outline-none text-lg font-primary
+}
+
+.searchBar .search-content .search-result .searchInput svg{
+  @apply
+  w-6 h-6 stroke-darkBlue
+}
+
+.searchBar .search-content .search-map{
+  flex:3;
+
+  @apply
+  bg-gray-200 bottom-0 right-0 w-full h-full hidden lg:block
+}
+
+.searchBar .result{
+  height:72vh;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+
+  @apply
+  overflow-auto grid gap-x-4 gap-y-8
+}
+
+@media(min-width:1024px){
+  .searchBar .result{
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    height:82vh;
+  }
+}
+
+.searchBar .result .enterpriseCard{
+  min-width: auto!important;
+  height:453px;
+
+  @apply
+  w-full
+}
+
+.searchBar .result .enterpriseCard img{
+  height:305px;
+}
+
+.searchBar .result .enterpriseCard .enterpriseInfo{
+  height:auto;
+}
+
+.searchBar .search-content .advanced-filters{
+  @apply
+  flex gap-2 items-center cursor-pointer mt-4 lg:mt-0
+}
+
+.searchBar .search-content .advanced-filters span{
+  @apply
+  text-regularGray uppercase underline
+}
+
+.searchBar .search-content .advanced-filters:hover span{
+  @apply
+  text-darkBlue
+}
+
+.searchBar .search-content .advanced-filters svg{
+  @apply
+  w-6 h-6 fill-darkBlue
+}

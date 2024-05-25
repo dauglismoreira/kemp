@@ -1,0 +1,9 @@
+.verticalSeparateContainer{
+  @apply
+  w-full flex items-center justify-center py-20 pt-[1040px] lg:pt-80
+}
+
+.verticalSeparateContainer .verticalSeparate{
+  @apply
+  bg-softBlue w-px h-[213px]
+}

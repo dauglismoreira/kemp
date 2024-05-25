@@ -1,0 +1,9 @@
+.banner{
+  @apply
+  w-full h-[404px] bg-darkBlue flex items-center justify-center bg-center bg-cover
+}
+
+.banner h2{
+  @apply
+  text-white text-3xl font-semibold font-primary text-center max-w-[170px] lg:max-w-full
+}

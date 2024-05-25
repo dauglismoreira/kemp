@@ -1,0 +1,303 @@
+.enterprise-page{
+  @apply
+  w-full mt-20
+}
+
+.cover-section img{
+  @apply
+  w-full h-[722px] lg:h-[788px] object-cover
+}
+
+.enterprise-menu{
+  @apply
+  bg-softBlack w-full justify-start 2xl:justify-end overflow-auto hidden lg:flex
+}
+
+.enterprise-menu ul{
+  @apply
+  flex gap-6 text-white justify-start 
+}
+
+@media(min-width:1414px){
+  .enterprise-menu ul{
+    width:calc(100% - 254px);
+    max-width:calc(100% - 254px);
+  }
+}
+
+.enterprise-menu ul li{
+  @apply
+  h-12 flex items-center text-sm font-secondary uppercase cursor-pointer whitespace-nowrap
+}
+
+.enterprise-content{
+  @apply
+  w-full flex flex-wrap
+}
+
+.enterprise-content .enterprise-sidebar{
+  @apply
+  hidden lg:block
+}
+
+@media(min-width:1414px){
+  .enterprise-content .enterprise-sidebar{
+    max-width:calc(100% - 254px);
+  }
+}
+
+.enterprise-content .enterprise-body-container{
+  flex:4;
+
+  @apply
+  flex items-end flex-col
+}
+
+.enterprise-content .enterprise-sidebar-container{
+  flex:2;
+
+  @apply
+  hidden lg:flex items-start flex-col bg-darkBlue max-h-min -mt-[72px] relative p-4
+  max-h-[1120px] h-[1120px]
+}
+
+.enterprise-content .enterprise-sidebar-container img{
+  @apply
+  w-[639px] h-[800px] object-cover top-60 absolute -ml-[140px]
+}
+
+.enterprise-content .enterprise-sidebar-container h2{
+  @apply
+  text-white font-primary text-2xl font-semibold
+}
+
+.enterprise-content .enterprise-sidebar-container p{
+  @apply
+  text-white font-primary text-sm
+}
+
+.enterprise-content .enterprise-body{
+  @apply
+  lg:pr-44 lg:pt-24 pb-0 text-center lg:text-left
+}
+
+@media(min-width:1414px){
+  .enterprise-content .enterprise-body{
+    max-width:calc(100% - 254px);
+  }
+}
+
+.enterprise-content .enterprise-body .vertical-image-mobile{
+  width:calc(100% - 40px);
+
+  @apply
+  block lg:hidden mx-auto h-[451px] object-cover mb-20
+}
+
+.enterprise-content .enterprise-body h1{
+  @apply
+  text-center lg:text-left text-2xl lg:text-5xl font-primary text-darkBlue font-semibold lg:max-w-[300px] leading-normal
+  mt-12 lg:mt-0 mb-2 lg:mb-0
+}
+
+.enterprise-content .enterprise-body p{
+  @apply
+  text-center lg:text-left text-regularGray text-lg font-secondary
+}
+
+.enterprise-content .enterprise-body .characteristcs{
+  @apply
+  flex flex-col lg:flex-row pt-12 pb-20 lg:py-20 gap-12 lg:gap-20 items-center
+}
+
+.enterprise-content .enterprise-body .characteristcs span{
+  @apply
+  text-darkBlue font-primary text-lg font-semibold
+}
+
+.enterprise-content .enterprise-body .enterprise-description{
+  @apply
+  px-4 2xl:px-0
+}
+
+.enterprise-content .enterprise-body .enterprise-description p{
+  @apply
+  text-left text-regularGray font-secondary text-lg mb-8
+}
+
+.enterprise-content .enterprise-body .enterprise-description h2,
+.enterprise-content .enterprise-body .enterprise-description h3,
+.enterprise-content .enterprise-body .enterprise-description h4,
+.enterprise-content .enterprise-body .enterprise-description h5{
+  @apply
+  text-darkBlue text-lg lg:text-3xl font-semibold font-primary mb-8
+  px-8 lg:px-0
+}
+
+.enterprise-content .enterprise-body .skills,
+.enterprise-content .enterprise-body .features,
+.enterprise-content .enterprise-body .details,
+.enterprise-content .videos,
+.enterprise-content .tour,
+.enterprise-content .localization{
+  @apply
+  pt-12 px-4 2xl:px-0
+}
+
+.enterprise-content .localization,
+.enterprise-content .tour{
+  @apply
+  py-20
+}
+
+.enterprise-content .tour{
+  @apply
+  py-8 lg:py-20
+}
+
+.enterprise-content .videos,
+.enterprise-content .localization,
+.enterprise-content .tour{
+  @apply
+  w-full max-w-[1412px] mx-auto
+}
+
+.enterprise-content .videos .video-content{
+  @apply
+  w-full bg-gray-200 h-[203px] lg:h-[794px]
+}
+
+.enterprise-content .localization .map-content{
+  @apply
+  w-full bg-gray-200 h-[361px] lg:h-[560px]
+}
+
+.enterprise-content .tour .tour-content{
+  @apply
+  w-full bg-gray-200 h-[203px] lg:h-[794px]
+}
+
+.enterprise-content .videos .video-content iframe,
+.enterprise-content .localization .map-content iframe,
+.enterprise-content .tour .tour-content iframe{
+  @apply
+  w-full h-full
+}
+
+.enterprise-content .enterprise-body .skills h3,
+.enterprise-content .enterprise-body .features h3,
+.enterprise-content .enterprise-body .details h3,
+.enterprise-content .videos h3,
+.enterprise-content .localization h3,
+.enterprise-content .tour h3{
+  @apply
+  text-darkBlue font-primary text-lg uppercase font-semibold mb-8 text-left
+}
+
+.enterprise-content .enterprise-body .skills li,
+.enterprise-content .enterprise-body .features li,
+.enterprise-content .enterprise-body .details li,
+.enterprise-content .localization li,
+.enterprise-content .tour li{
+  @apply
+  text-regularGray font-secondary text-lg mb-4 relative pl-6 lg:pl-12 text-left
+}
+
+.enterprise-content .localization li{
+  @apply
+  pl-4
+}
+
+.enterprise-content .enterprise-body .skills li::before,
+.enterprise-content .enterprise-body .features li::before,
+.enterprise-content .enterprise-body .details li::before,
+.enterprise-content .localization li::before,
+.enterprise-content .tour li::before{
+  content:'';
+  
+  @apply
+  absolute left-0 w-1 h-1 bg-regularGray rounded-full top-[13px] lg:left-8
+}
+
+.enterprise-content .localization li::before{
+  @apply
+  left-2
+}
+
+.enterprise-content .enterprise-body .features ul{
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+  @apply
+  grid
+}
+
+.enterprise-content .localization ul{
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+  @apply
+  grid mb-8
+}
+
+.enterprise-content .enterprise-body .details p{
+  @apply
+  mb-4 text-left
+}
+
+.enterprise-content .localization p{
+  @apply
+  text-regularGray font-secondary text-lg mb-4
+}
+
+.enterprise-content .localization h5{
+  @apply
+  text-regularGray font-secondary text-lg mb-4 font-semibold mt-8
+}
+
+.enterprise-content .localization .locatization-content{
+  @apply
+  flex flex-wrap flex-col lg:flex-row
+}
+
+.enterprise-content .localization .locatization-content .localization-info{
+  flex:4;
+}
+
+.enterprise-content .localization .localization-cta-container{
+  flex:2;
+
+  @apply
+  flex justify-center lg:justify-end pt-4 lg:pt-12
+}
+
+.enterprise-content .localization .locatization-content .localization-cta-container.desktop{
+  @apply
+  hidden lg:flex
+}
+
+.enterprise-content .localization .locatization-content .localization-cta-container.mobile{
+  @apply
+  flex lg:hidden
+}
+
+.enterprise-content .localization .localization-cta{
+  @apply
+  underline cursor-pointer text-darkBlue font-secondary uppercase
+}
+
+.enterprise-content .related-container{
+  @apply
+  w-full max-w-[1412px] mx-auto mt-32 lg:mt-4 mb-20 lg:mb-36
+}
+
+.enterprise-content .related-container .related-title h3{
+  @apply
+  font-primary text-darkBlue font-semibold uppercase text-lg mb-32 lg:mb-16
+  text-center lg:text-left
+}
+
+.enterprise-content .related-container .content{
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+  @apply
+  grid gap-4 pt-4 flex-col lg:flex-row px-4 2xl:px-0
+}

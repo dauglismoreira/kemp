@@ -1,0 +1,76 @@
+.enterprise-progress-container{
+  @apply
+  w-full bg-darkBlue pt-[180px] -mt-[140px] lg:pt-[540px] lg:-mt-[500px] relative -z-10 mb-32
+}
+
+.enterprise-progress-container h3{
+  @apply
+  text-white font-primary uppercase font-semibold mb-8
+}
+
+.enterprise-progress-content{
+  @apply
+  w-full max-w-[1412px] mx-auto px-4 lg:px-0
+}
+
+.enterprise-progress-content .progress-list{
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+  @apply
+  grid gap-x-8
+}
+
+@media(max-width:768px){
+  .enterprise-progress-content .progress-list{
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+.enterprise-progress-photos{
+  
+}
+
+.enterprise-progress-photos .enterprise-progress-title{
+  @apply
+  w-full max-w-[1412px] mx-auto px-4 lg:px-0
+}
+
+.enterprise-progress-photos .enterprise-progress-title h3{
+  @apply
+  text-white font-primary uppercase text-lg mt-20
+}
+
+.enterprise-progress-photos .enterprise-progress-title h5{
+  @apply
+  text-lg lg:text-2xl text-white font-primary uppercase font-semibold mb-8 -mt-4
+}
+
+/* .enterpriseSwiper{
+  @apply
+  -mb-[160px]
+} */
+
+.enterpriseSwiper img{
+  @apply
+  h-[224px] lg:h-[338px] object-cover w-full
+}
+
+.enterprise-progress-navigation .enterprise-navigation-container{
+  @apply
+  w-full max-w-[1412px] mx-auto flex justify-between
+}
+
+.enterprise-progress-navigation .enterprise-navigation-container .arrows{
+  @apply
+  flex gap-8 h-10 items-center mt-1
+}
+
+.enterprise-progress-navigation .enterprise-navigation-container .arrows svg{
+  @apply
+  w-6 h-6 fill-darkBlue cursor-pointer
+}
+
+.enterprise-progress-navigation .enterprise-navigation-container .index{
+  @apply
+  text-darkBlue font-primary text-2xl mt-2
+}

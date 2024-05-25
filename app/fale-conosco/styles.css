@@ -1,0 +1,35 @@
+.contact-form-container{
+  @apply
+  mt-32 lg:mt-52 max-w-[1412px] mx-auto  px-4 2xl:px-0
+}
+
+.contact-form-container .content{
+  @apply
+  flex flex-col lg:flex-row w-full gap-12 lg:gap-20
+}
+
+.contact-form-body{
+  flex:7;
+
+  @apply
+  flex flex-col w-full
+}
+
+.contact-form-sidebar{
+  flex:3;
+}
+
+.contact-form-container h1{
+  @apply
+  text-darkBlue font-primary font-semibold text-lg lg:text-3xl mb-8 lg:mb-28
+}
+
+.content .contact-form-body p{
+  @apply
+  text-regularGray font-secondary lg:text-lg mb-12
+}
+
+.content .contact-form-body h5{
+  @apply
+  text-regularGray font-semibold font-secondary lg:text-lg
+}

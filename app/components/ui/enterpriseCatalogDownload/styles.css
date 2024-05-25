@@ -1,0 +1,63 @@
+.catalog-download-container{
+  @apply
+  w-full flex flex-wrap my-16 flex-col lg:flex-row
+}
+
+.catalog-download-container .catalog-download-body{
+  flex:3;
+
+  @apply
+  flex items-end flex-col
+}
+
+.catalog-download-container .catalog-download-sidebar{
+  flex:2;
+
+  @apply
+  bg-softBlack mx-4 lg:mx-0 py-2 lg:py-0
+}
+
+.catalog-download-container .catalog-download-body .catalog-download-content{
+  @apply
+  p-4
+}
+
+.catalog-download-container .catalog-download-sidebar .catalog-download-cta{
+  @apply
+  flex flex-col justify-center w-full h-full px-8
+}
+
+@media(min-width:1414px){
+  .catalog-download-container .catalog-download-body .catalog-download-content{
+    max-width:calc(100% - 234px);
+  }
+  .catalog-download-container .catalog-download-sidebar .catalog-download-cta{
+    max-width:calc(100% - 254px);
+  }
+}
+
+.catalog-download-container .catalog-download-sidebar .catalog-download-cta button{
+  @apply
+  w-full max-w-[383px] border-b border-white text-white flex items-center gap-4 justify-center h-12
+  font-secondary uppercase
+}
+
+.catalog-download-container .catalog-download-sidebar .catalog-download-cta button svg{
+  @apply
+  w-6 h-6
+}
+
+.catalog-download-container .catalog-download-body .catalog-download-content h5{
+  @apply
+  text-lg font-primary text-darkBlue uppercase mb-8 lg:mb-12 -mt-20
+}
+
+.catalog-download-container .catalog-download-body .catalog-download-content h3{
+  @apply
+  text-xl lg:text-3xl font-primary text-darkBlue font-semibold mb-8
+}
+
+.catalog-download-container .catalog-download-body .catalog-download-content p{
+    @apply
+    text-regularGray font-secondary text-lg
+}

@@ -1,0 +1,107 @@
+.Region .region-img-container{
+  @apply
+  w-full h-[649px] lg:h-[797px]
+}
+
+.Region .region-img-container img{
+  @apply
+  w-full h-full object-cover
+}
+
+.Region .content{
+  @apply
+  w-full max-w-[1412px] mx-auto px-4 lg:p-12 flex
+}
+
+.Region .content .menu{
+  @apply
+  flex gap-8 items-center mb-8 mt-8 lg:mt-0
+}
+
+.Region .content .menu span{
+  @apply
+  text-regularGray uppercase font-secondary cursor-pointer underline
+}
+
+.Region .content .menu span.active{
+  @apply
+  text-darkBlue
+}
+
+.Region .content .side-bar{
+  flex:1;
+
+  @apply
+  hidden lg:block
+}
+
+.Region .content .body{
+  flex:6;
+}
+
+.Region .content .side-bar h3{
+  @apply
+  text-darkBlue font-primary uppercase text-lg
+}
+
+.Region .content .body p{
+  @apply
+  text-darkGray mb-10
+}
+
+.Region .cta-container{
+  @apply
+  relative h-44 my-12 lg:my-32
+}
+
+.Region .cta-container .cta{
+  @apply
+  w-[348px] h-[121px] flex items-center justify-center border-b border-softBlue cursor-pointer relative
+}
+
+.Region .cta-container .cta h5{
+  @apply
+  text-darkBlue uppercase
+}
+
+.Region .cta-container .cta-text{
+  z-index:-1;
+
+  @apply
+  text-5xl lg:text-7xl text-darkBlue opacity-20 font-bold font-primary absolute inset-0 left-4 lg:left-40
+}
+
+.Region .cat-section{
+  @apply
+  w-full max-w-[960px] mx-auto
+}
+
+.Region .image-section{
+  @apply
+  w-full max-w-[1412px] mx-auto lg:my-40 mb-24 lg:mb-0 relative px-4 lg:px-0 flex flex-col-reverse lg:flex-col
+}
+
+.Region .image-section .title{
+  @apply
+  flex justify-end lg:px-12 z-10 relative
+}
+
+.Region .image-section .title span{
+  @apply
+  bg-darkBlue h-[130px] lg:h-[182px] flex items-center justify-center px-8 lg:px-4 max-w-max -mt-16 lg:mt-0 lg:-mb-24
+}
+
+.Region .image-section .title h3{
+  @apply
+  text-white font-primary uppercase text-sm lg:text-2xl
+}
+
+.Region .image-section img{
+  @apply
+  w-full h-[222px] lg:h-[870px] object-cover
+}
+
+.Region .invest-section{
+  @apply
+  lg:hidden
+}

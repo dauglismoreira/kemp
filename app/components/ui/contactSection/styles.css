@@ -1,0 +1,53 @@
+.ContactSection .title{
+  @apply
+  w-full max-w-[1412px] mx-auto text-center pt-8 pb-16
+}
+
+.ContactSection .title h2{
+  @apply
+  text-lg lg:text-2xl uppercase text-darkBlue font-bold font-primary
+}
+
+.ContactSection .content{
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+
+  @apply
+  w-full max-w-[1412px] mx-auto grid gap-4 items-center justify-between lg:border-b border-darkBlue flex-wrap
+  px-4 2xl:px-0
+}
+
+@media(min-width:1024px){
+  .ContactSection .content{
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+}
+
+.ContactSection .content .box{
+  @apply
+  flex-1 px-3 py-8 h-64 flex flex-col justify-between border-b border-darkBlue lg:border-0
+}
+
+.ContactSection .content .box h3{
+  @apply
+  text-xl uppercase text-darkBlue font-semibold max-w-[360px] font-primary
+}
+
+.ContactSection .content .box p{
+  @apply
+  text-base text-regularGray font-secondary text-sm mb-8
+}
+
+.ContactSection .content .box h5{
+  @apply
+  text-xl text-darkBlue font-semibold font-primary
+}
+
+.ContactSection .content .box h5.mobile{
+  @apply
+  lg:hidden whitespace-pre-line
+}
+
+.ContactSection .content .box h5.desktop{
+  @apply
+  hidden lg:block
+}

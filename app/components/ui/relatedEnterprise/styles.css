@@ -1,0 +1,21 @@
+.relatedEnterprise{
+  @apply
+  w-full max-w-[1412px] mx-auto
+}
+
+.relatedEnterprise .relatedTitle{
+  @apply
+  my-16 lg:my-32
+}
+
+.relatedEnterprise .relatedTitle h3{
+  @apply
+  text-darkBlue uppercase text-center text-lg lg:text-3xl font-semibold font-primary
+}
+
+.relatedEnterprise .relatedContent{
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+  @apply
+  grid gap-4 pt-4 flex-col lg:flex-row px-4 2xl:px-0 mb-20 lg:mb-36
+}

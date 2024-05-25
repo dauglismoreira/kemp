@@ -1,0 +1,24 @@
+.enterpriseCard{
+  @apply
+  w-full min-w-[340px] h-[693px] border-b border-darkBlue cursor-pointer
+}
+
+.enterpriseCard img{
+  @apply
+  w-full h-[495px] object-cover
+}
+
+.enterpriseCard h3{
+  @apply
+  text-regularGray uppercase font-semibold text-xs font-primary
+}
+
+.enterpriseCard h2{
+  @apply
+  text-darkBlue font-semibold text-2xl max-w-[140px] font-primary
+}
+
+.enterpriseCard .enterpriseInfo{
+  @apply
+  p-4 flex flex-col gap-4 justify-around h-48
+}

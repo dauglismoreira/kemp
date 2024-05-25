@@ -1,0 +1,52 @@
+.invest-page{
+  @apply
+  mt-20
+}
+
+.invest-page .invest-banner{
+  @apply
+  w-full h-[649px] lg:h-[797px] bg-center bg-cover flex flex-col items-center justify-center gap-12 lg:pt-60
+}
+
+.invest-page .invest-banner h5{
+  @apply
+  text-sm text-white font-primary uppercase hidden lg:block
+}
+
+.invest-page .invest-banner h1{
+  @apply
+  text-2xl lg:text-5xl font-primary text-white font-semibold max-w-[320px] lg:max-w-[780px] text-center leading-normal
+}
+
+.invest-page .invest-banner .line-separate{
+  @apply
+  h-[101px] w-px bg-white hidden lg:block
+}
+
+.invest-page .invest-content{
+  @apply
+  w-full max-w-[1412px] mx-auto my-12 lg:my-40 flex flex-col gap-8 lg:gap-20 px-4 2xl:px-0
+}
+
+.invest-page .invest-content .invest-item{
+  @apply
+  flex gap-8 lg:gap-20 flex-col lg:flex-row
+}
+
+.invest-page .invest-content .invest-item .invest-label{
+  flex:1;
+}
+
+.invest-page .invest-content .invest-item .invest-label h4{
+  @apply
+  text-darkBlue font-primary uppercase text-lg  font-semibold
+}
+
+.invest-page .invest-content .invest-item .invest-text{
+  flex:5;
+}
+
+.invest-page .invest-content .invest-item .invest-text p{
+  @apply
+  text-regularGray font-secondary text-lg
+}

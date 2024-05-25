@@ -1,0 +1,65 @@
+.work-container{
+  @apply
+  mt-32 lg:mt-52 max-w-[1412px] mx-auto  px-4 2xl:px-0
+}
+
+.work-container .content{
+  @apply
+  flex flex-col lg:flex-row w-full gap-12 lg:gap-20
+}
+
+.work-body{
+  flex:7;
+
+  @apply
+  flex flex-col w-full
+}
+
+.work-sidebar{
+  flex:3;
+}
+
+.work-sidebar h3{
+  @apply
+  text-darkBlue font-primary uppercase text-sm
+}
+
+.work-sidebar .job-item{
+  @apply
+  border-b border-darkBlue py-4 px-0 lg:px-8
+}
+
+.work-sidebar .job-item h5{
+  @apply
+  text-darkGray font-primary text-lg
+}
+
+.work-sidebar .job-item p{
+  @apply
+  text-darkGray font-primary text-sm
+}
+
+.work-container h1{
+  @apply
+  text-darkBlue font-primary font-semibold text-lg lg:text-3xl mb-8 lg:mb-28
+}
+
+.content .work-body p{
+  @apply
+  text-regularGray font-secondary lg:text-lg mb-12
+}
+
+.content .work-body h5{
+  @apply
+  text-regularGray font-semibold font-secondary lg:text-lg
+}
+
+.work-container .content .desktop-form{
+  @apply
+  hidden lg:block
+}
+
+.work-container .content .mobile-form{
+  @apply
+  block lg:hidden 
+}

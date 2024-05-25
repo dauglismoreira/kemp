@@ -1,0 +1,22 @@
+#blog.section{
+  @apply
+  w-full py-20 lg:pt-60 lg:pb-32
+}
+
+#blog.section .container{
+  @apply
+  w-full max-w-[1412px] mx-auto
+}
+
+#blog.section .container .content{
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+
+  @apply
+  grid gap-8 lg:gap-4 py-2 px-4 2xl:px-0 mt-8 lg:mt-0
+}
+
+@media(max-width:1024px){
+  #blog.section .container .content{
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+}

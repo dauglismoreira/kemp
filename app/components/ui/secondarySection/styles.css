@@ -1,0 +1,16 @@
+#secondary.section{
+  @apply
+  w-full py-16 lg:py-40
+}
+
+#secondary.section .container{
+  @apply
+  w-full max-w-[1412px] mx-auto
+}
+
+#secondary.section .container .content{
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+  @apply
+  grid gap-4 pt-4 flex-col lg:flex-row px-4 2xl:px-0
+}

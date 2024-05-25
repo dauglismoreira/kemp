@@ -1,0 +1,104 @@
+.header{
+  @apply
+  w-full bg-white fixed top-0 left-0 h-[80px] lg:h-[88px] z-40 shadow-lg
+}
+
+.header .content{
+  @apply
+  h-full max-w-[1740px] mx-auto flex justify-between items-center px-4 relative
+}
+
+.header .toggle{
+  @apply
+  w-8 h-8 flex gap-2 flex-col cursor-pointer justify-around py-px
+}
+
+.header .toggle.mobile{
+  @apply
+  flex lg:hidden
+}
+
+.header .toggle.desktop{
+  @apply
+  hidden lg:flex
+}
+
+.header .toggle.open{
+  @apply
+  hidden
+}
+
+
+.header .toggle span{
+  @apply
+  h-0.5 bg-darkBlue w-full block
+}
+
+.header .search{
+  @apply
+  cursor-pointer
+}
+
+.header .search svg{
+  @apply
+  w-8 h-8 stroke-darkBlue
+}
+
+.header .actions{
+  @apply
+  flex items-center gap-4
+}
+
+@media(max-width:1024px){
+  .header .content img{
+    @apply
+    w-24
+  }
+}
+
+.header-menu{
+  transform:translate(-200%,0);
+  @apply
+  hidden lg:flex gap-8 transition
+}
+
+.header-menu.open{
+  transform:translate(0,0);
+}
+
+.header-menu ul{
+  @apply
+  flex gap-8
+}
+
+.header-menu ul li{
+  @apply
+  uppercase text-darkBlue font-secondary cursor-pointer
+}
+
+.header-menu ul li:hover{
+  @apply
+  border-b border-darkBlue
+}
+
+.header-menu span{
+  @apply
+  cursor-pointer
+}
+
+.header-menu span svg{
+  @apply
+  w-6 h-6 stroke-darkBlue
+}
+
+@media(min-width:1024px){
+  .header .content img{
+    @apply
+    absolute left-2/4 -translate-x-2/4 -mt-4
+  }
+
+  .header.open .content img{
+    @apply
+    left-auto right-[30px]
+  }
+}

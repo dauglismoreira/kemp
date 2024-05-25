@@ -1,0 +1,71 @@
+.center-sell-container{
+  @apply
+  mt-20 flex flex-col lg:flex-row
+}
+
+.center-sell-body{
+  flex:4;
+
+  @apply
+  py-12 px-8 flex justify-end w-full
+}
+
+.center-sell-sidebar{
+  flex:3;
+
+  @apply
+  bg-darkBlue py-12 px-8
+}
+
+@media(min-width:1024px){
+  .center-sell-sidebar .sell-contact{
+    max-width:calc(100% - 254px);
+  }
+  
+  .center-sell-body .content{
+    max-width:calc(100% - 254px);
+  
+    @apply
+    py-20
+  }
+}
+
+.center-sell-body .content h1{
+  @apply
+  text-darkBlue font-primary font-semibold text-lg lg:text-3xl mb-8 lg:mb-28
+}
+
+.center-sell-body .content p{
+  @apply
+  text-regularGray font-secondary lg:text-lg mb-12
+}
+
+.center-sell-body .content h5{
+  @apply
+  text-regularGray font-semibold font-secondary lg:text-lg
+}
+
+.center-sell-body .content .contact-list{
+  @apply
+  mt-12 lg:mt-20
+}
+
+.center-sell-body .content .contact-list .contact-item{
+  @apply
+  mb-12 lg:mb-20
+}
+
+.center-sell-body .content .contact-list h3{
+  @apply
+  text-lg lg:text-2xl font-semibold font-primary uppercase whitespace-pre-line text-darkBlue h-16 lg:h-20
+}
+
+.center-sell-body .content .contact-list p{
+  @apply
+  text-regularGray font-secondary mb-4
+}
+
+.center-sell-body .content .contact-list h4{
+  @apply
+  text-lg lg:text-2xl font-semibold font-primary uppercase whitespace-pre-line text-darkBlue
+}

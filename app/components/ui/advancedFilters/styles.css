@@ -1,0 +1,56 @@
+.advancedFilters{
+  transform:translate(130%,0);
+
+  @apply
+  fixed z-50 bg-white  h-full top-0 right-0 w-full lg:w-2/4 max-w-[660px] transition justify-between flex flex-col
+  py-8 px-4 lg:py-12 lg:px-16
+}
+
+.advancedFilters.open{
+  transform:translate(0,0);
+}
+
+.advancedFiltersOverlay{
+  @apply
+  fixed inset-0 w-full h-full bg-gray-600 opacity-50 z-40 hidden
+}
+
+.advancedFiltersOverlay.open{
+  @apply
+  block
+}
+
+.advancedFilters .close{
+  @apply
+  w-6 h-6 text-darkBlue cursor-pointer top-4 right-4 lg:top-10 lg:right-12
+}
+
+.advancedFilters .body{
+  @apply
+  flex flex-col gap-6 py-8
+}
+
+.advancedFilters h3{
+  @apply
+  text-lg text-darkBlue font-semibold font-primary uppercase
+}
+
+.advancedFilters fieldset{
+  @apply
+  flex gap-2 flex-col mb-4
+}
+
+.advancedFilters fieldset label{
+  @apply
+  text-sm text-darkBlue uppercase font-semibold font-primary
+}
+
+.advancedFilters fieldset select{
+  @apply
+  h-12 px-2 text-darkBlue uppercase font-semibold font-primary bg-white border border-darkBlue max-w-[420px]
+}
+
+.advancedFilters .container-buttons{
+  @apply
+  flex gap-4
+}

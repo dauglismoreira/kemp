@@ -1,0 +1,59 @@
+.invest-contact-container{
+  @apply
+  w-full max-w-[1412px] mx-auto
+}
+
+.invest-contact-container .invest-contact-title h3{
+  @apply
+  text-xl lg:text-3xl text-darkBlue font-primary font-semibold px-4 2xl:px-0
+}
+
+.invest-contact-container .invest-contact-content{
+  @apply
+  max-w-[938px] my-12 lg:my-20 px-4 2xl:px-0
+}
+
+.invest-contact-container .invest-contact-content p{
+  @apply
+  text-regularGray font-secondary mb-8
+}
+
+.invest-contact-container .invest-contact-content label{
+  @apply
+  text-regularGray font-secondary font-semibold
+}
+
+
+.invest-contact-form{
+  @apply
+  flex gap-4 flex-col lg:flex-row px-4 2xl:px-0
+}
+
+.invest-contact-form .contact-input-container{
+  @apply
+  w-full max-w-[938px] flex flex-col gap-2
+}
+
+.invest-contact-form .contact-input-container .contact-input-row{
+  @apply
+  flex gap-4 min-w-full flex-col lg:flex-row
+}
+
+.invest-contact-form .contact-input-container .contact-input-col{
+  flex:1;
+}
+
+.invest-contact-container form{
+  @apply
+  mb-40
+}
+
+.invest-contact-form .contact-input-container .contact-input-row.mobile{
+  @apply
+  flex lg:hidden mb-8
+}
+
+.invest-contact-form .contact-input-sidebar{
+  @apply
+  hidden lg:block
+}

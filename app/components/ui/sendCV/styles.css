@@ -1,0 +1,29 @@
+form.send-cv{
+  @apply
+  my-8 lg:my-20
+}
+
+form.send-cv h3{
+  @apply
+  text-regularGray font-primary uppercase text-lg font-semibold mb-12
+}
+
+form.send-cv .contact-input-row{
+  @apply
+  flex flex-wrap lg:gap-8
+}
+
+form.send-cv .contact-input-col{
+  @apply
+  flex-1
+}
+
+form.send-cv fieldset input{
+  @apply
+  h-10
+}
+
+form.send-cv fieldset input, form.send-cv fieldset textarea{
+  @apply
+  lg:mb-8 outline-none
+}

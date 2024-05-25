@@ -1,0 +1,72 @@
+.menuBar{
+  transform:translate(0,-150%);
+
+  @apply
+  w-full fixed h-full inset-0 bg-white z-50 transition
+}
+
+.menuBar.open{
+  transform:translate(0,0);
+}
+
+.menuBar .close{
+  @apply
+  absolute top-4 right-4 lg:top-6 lg:right-8
+}
+
+.menuBar .close svg{
+  @apply
+  w-8 h-8 cursor-pointer stroke-darkBlue
+}
+
+.menuBar .menu-content{
+  @apply
+  flex pt-20 h-full flex-col justify-between
+}
+
+.menuBar .menu-content ul{
+  height:80vh;
+
+  @apply
+  flex justify-start flex-col items-center overflow-auto
+}
+
+.menuBar .menu-content ul li{
+  @apply
+  text-darkBlue uppercase font-primary font-semibold py-4 cursor-pointer flex gap-2 items-center
+}
+
+.menuBar .menu-content ul li svg{
+  @apply
+  w-6 h-6 stroke-darkBlue transition
+}
+
+.menuBar .menu-content ul li.open svg{
+  @apply
+  rotate-180
+}
+
+.menuBar .menu-content .social-container{
+  @apply
+  w-full flex justify-between py-8 px-4
+}
+
+.menuBar .menu-content .social-container span{
+  @apply
+  text-regularGray uppercase text-sm cursor-pointer hover:underline
+}
+
+.menuBar .menu-content .sub-menu{
+  @apply
+  bg-ultraSoftGray w-full py-0 h-0 overflow-hidden
+}
+
+.menuBar .menu-content .sub-menu.open{
+  @apply
+  py-4 min-h-max h-auto
+}
+
+.menuBar .menu-content .sub-menu li{
+  @apply
+  text-center justify-center py-4
+}

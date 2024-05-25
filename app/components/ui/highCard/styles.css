@@ -1,0 +1,54 @@
+.high-card-container{
+  @apply
+  w-full flex h-[737px] flex-col lg:flex-row
+}
+
+.high-card-container .image-cover{
+  @apply
+  lg:flex-1 bg-gray-800 h-[380px] lg:h-full
+}
+
+.high-card-container .image-cover img{
+  @apply
+  w-full lg:h-full h-[380px]
+}
+
+
+.high-card-container .high-card-content{
+  @apply
+  flex-1 bg-darkBlue p-4 lg:p-8 flex flex-col justify-center relative gap-4 lg:gap-20
+}
+
+.high-card-container .high-card-content h5{
+  @apply
+  text-white font-primary uppercase text-sm font-semibold
+}
+
+.high-card-container .high-card-content h3{
+  @apply
+  text-white font-primary tracking-wider text-2xl lg:text-3xl font-semibold
+  max-w-[460px]
+}
+
+.high-card-container .high-card-content li{
+  @apply
+  text-white font-primary flex gap-2 items-center py-2
+}
+
+.high-card-container .high-card-content li::before{
+  content:'';
+
+  @apply
+  w-1 h-1 bg-white block rounded-full
+}
+
+.high-card-container .high-card-content .high-cta{
+  @apply
+  lg:absolute right-10 bottom-10 border-b border-white w-full max-w-[340px]
+  h-[120px] flex gap-4 items-center justify-center cursor-pointer
+}
+
+.high-card-container .high-card-content .high-cta span{
+  @apply
+  text-white font-primary text-2xl font-semibold max-w-[140px] block
+}

@@ -1,0 +1,62 @@
+.enterprise-gallery{
+  @apply
+  pt-12 pb-8 w-full px-4 2xl:px-0
+}
+
+.enterprise-gallery h3{
+  @apply
+  text-darkBlue font-primary text-lg uppercase font-semibold mb-8
+  w-full max-w-[1412px] mx-auto
+}
+
+.enterprise-gallery .select-menu{
+  @apply
+  w-full border border-darkBlue mb-4 h-12 px-4 bg-transparent text-darkBlue font-primary block lg:hidden
+}
+
+.enterprise-gallery ul.enterprise-menu{
+  @apply
+  gap-4 items-center font-secondary text-base text-regularGray underline cursor-pointer font-normal
+  mt-4 mb-8 font-semibold bg-transparent justify-start
+  w-full max-w-[1412px] mx-auto hidden lg:flex
+}
+
+.enterprise-gallery ul.enterprise-menu li.active{
+  @apply
+  text-darkBlue
+}
+
+.enterprise-gallery .enterprise-gallery-content{
+  @apply
+  flex justify-end w-full
+}
+
+.enterprise-gallery .enterprise-gallery-content .swipper-container{
+  @apply
+  w-full max-w-[1666px] 
+}
+
+.enterprise-gallery .enterprise-gallery-content .swipper-container img{
+  @apply
+  h-[265px] lg:h-[513px] object-cover w-full
+}
+
+.enterprise-gallery .enterprise-gallery-navigation{
+  @apply
+  w-full max-w-[1412px] mx-auto flex justify-between
+}
+
+.enterprise-gallery .enterprise-gallery-navigation .arrows{
+  @apply
+  flex gap-8 h-10 items-center mt-1
+}
+
+.enterprise-gallery .enterprise-gallery-navigation .arrows svg{
+  @apply
+  w-6 h-6 fill-darkBlue cursor-pointer
+}
+
+.enterprise-gallery .enterprise-gallery-navigation .index{
+  @apply
+  text-darkBlue font-primary text-lg lg:text-2xl mt-2
+}

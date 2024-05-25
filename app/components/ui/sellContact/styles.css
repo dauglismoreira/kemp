@@ -1,0 +1,64 @@
+.sell-contact{
+  @apply
+  pt-12 lg:pt-56
+}
+
+.sell-contact h3{
+  @apply
+  text-white font-primary uppercase text-lg font-semibold mb-12
+}
+
+form.sell-contact fieldset label{
+  @apply
+  text-white
+}
+
+form.sell-contact fieldset input{
+  @apply
+  h-10
+}
+
+form.sell-contact fieldset input, form.sell-contact fieldset textarea{
+  @apply
+  border-white bg-transparent outline-none text-white mb-8
+}
+
+form.sell-contact .authorize-check label{
+  @apply
+  text-white
+}
+
+form.sell-contact .authorize-check label a{
+  @apply
+  text-white
+}
+
+form.sell-contact .att-options label{
+  @apply
+  text-white
+}
+
+form.sell-contact .att-options{
+  @apply
+  mb-12
+}
+
+form.sell-contact .att-options .check-container .custom-check svg{
+  @apply
+  text-white bg-white
+}
+
+form.sell-contact .att-options .check-container .custom-check.active{
+  @apply
+  bg-white
+}
+
+form.sell-contact .att-options .check-container .custom-check.active svg{
+  @apply
+  text-darkBlue
+}
+
+form.sell-contact button{
+  @apply
+  border-white text-white mt-12
+}

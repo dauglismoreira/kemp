@@ -1,0 +1,84 @@
+.post-page-container{
+  @apply
+  w-full max-w-[1412px] mx-auto mt-32 lg:mt-48 mb-12 lg:mb-40 flex  items-center flex-col gap-12 lg:gap-20
+}
+
+.post-page-container .cover{
+  @apply
+  h-[264px] lg:h-[746px] object-cover w-full
+}
+
+.post-page-container .date{
+  @apply
+  text-regularGray uppercase font-primary text-sm
+}
+
+.post-page-container .title{
+  @apply
+  font-primary text-darkBlue font-semibold text-2xl lg:text-3xl max-w-[936px] text-center
+}
+
+.post-page-container .post-text{
+  @apply
+  w-full max-w-[936px] mx-auto font-secondary text-regularGray px-4 2xl:px-0
+}
+
+.post-page-container .post-text p{
+  @apply
+  text-lg mb-8
+}
+
+.post-page-container .post-text h2,
+.post-page-container .post-text h3,
+.post-page-container .post-text h4,
+.post-page-container .post-text h5{
+  @apply
+  font-semibold mb-8
+}
+
+.post-page-container .post-text small{
+  @apply
+  text-xs mb-6 mt-1 block
+}
+
+.post-page-container .post-text a{
+  @apply
+  text-lg underline
+}
+
+.post-page-container .post-text img{
+  @apply
+  w-full max-w-full
+}
+
+.post-page-container .post-page-content{
+  @apply
+  flex gap-12
+}
+
+.post-page-container .post-page-content .share-post{
+  @apply
+  hidden lg:flex flex-col gap-8 items-center
+}
+
+.post-page-container .post-page-content .share-post span,
+.post-page-container .share-post-mobile span{
+  @apply
+  font-primary text-regularGray
+}
+
+.post-page-container .post-page-content .share-post svg,
+.post-page-container .share-post-mobile svg{
+  @apply
+  w-6 h-6 fill-darkBlue cursor-pointer
+}
+
+.post-page-container .share-post-mobile{
+  @apply
+  flex justify-between w-full lg:hidden px-4 -mt-8
+}
+
+.post-page-container .share-post-mobile .share-container-icons{
+  @apply
+  flex gap-6
+}

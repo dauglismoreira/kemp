@@ -1,0 +1,146 @@
+.about-banner{
+  @apply
+  w-full mt-20
+}
+
+.about-banner .about-section-1{
+  @apply
+  w-full h-[260px] lg:h-[522px]
+}
+
+.about-banner .about-section-1 .container{
+  @apply
+  w-full max-w-[1412px] mx-auto flex items-center h-full justify-center lg:justify-start
+}
+
+.about-banner .about-section-1 .container h1{
+  @apply
+  text-darkBlue text-3xl lg:text-5xl font-bold font-primary text-center lg:text-left
+  max-w-[260px] lg:max-w-full
+}
+
+.about-banner .about-section-2{
+  @apply
+  w-full -mt-24 lg:mt-0
+}
+
+.about-banner .about-section-2.mobile{
+  @apply
+  block lg:hidden
+}
+
+.about-banner .about-section-2.desktop{
+  @apply
+  hidden lg:block
+}
+
+.about-banner .about-section-2 .container{
+  @apply
+  w-full max-w-[1412px] mx-auto flex justify-end 
+}
+
+.about-banner .about-section-2 .container span{
+  @apply
+  bg-darkBlue h-44 w-44 items-center flex justify-center text-white font-primary text-2xl uppercase relative
+  mr-2 lg:mr-0
+}
+
+.about-banner .about-section-3{
+  @apply
+  w-full h-[330px] lg:h-[797px] lg:-mt-20
+}
+
+.about-banner .about-section-3 img{
+  @apply
+  w-full h-full object-cover
+}
+
+.about-banner .content{
+  @apply
+  max-w-[936px] mx-auto py-20 relative px-4 2xl:px-0
+}
+
+.about-banner .content h2{
+  @apply
+  text-lg text-darkBlue uppercase font-semibold mb-8 lg:mb-16 font-primary
+}
+
+.about-banner .content h3{
+  @apply
+  text-lg lg:text-2xl text-darkBlue uppercase font-semibold mb-16 font-primary
+}
+
+.about-banner .content p{
+  @apply
+  text-regularGray font-secondary mb-16
+}
+
+.about-banner .content span{
+  @apply
+  text-regularGray font-secondary mb-4 block
+}
+
+.about-banner .content .video-container{
+  @apply
+  w-full h-[220px] lg:h-[526px] bg-gray-200 mb-20 lg:mb-32
+}
+
+.about-banner .content ul li{
+  @apply
+  flex gap-2
+}
+
+.about-banner .content ul span{
+  @apply
+  w-[38px] block h-px bg-softBlue mt-3
+}
+
+.about-banner .content ul h4{
+  @apply
+  text-darkBlue uppercase font-semibold
+}
+
+.about-banner .content ul p{
+  @apply
+  mb-10
+}
+
+.about-banner .content-2{
+  @apply
+  bg-darkBlue w-full py-20
+}
+
+.about-banner .content-2 .container{
+  @apply
+  w-full max-w-[1412px] mx-auto flex gap-8 flex-wrap
+}
+
+.about-banner .content-2 .container .box{
+  @apply
+  flex px-8 bg-white flex-1 flex-col gap-8 py-12 mx-8 lg:mx-0
+}
+
+.about-banner .content-2 .container .box h3{
+  @apply
+  text-2xl text-darkBlue font-primary font-semibold max-w-[160px] min-h-12
+}
+
+.about-banner .content-2 .container .box p{
+  @apply
+  text-regularGray font-secondary whitespace-pre-line
+}
+
+.about-banner .slogan{
+  @apply
+  absolute -right-96 bottom-[500px] flex-col hidden lg:flex
+}
+
+.about-banner .slogan img{
+  @apply
+  w-8 h-8 absolute right-28 -top-44
+}
+
+.about-banner .slogan h2{
+  @apply
+  -rotate-90
+}

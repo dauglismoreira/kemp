@@ -1,0 +1,58 @@
+.plant-gallery{
+  @apply
+  w-full max-w-[1412px] mx-auto pt-12 pb-4 lg:pb-20 px-4 2xl:px-0
+}
+
+.plant-gallery h3{
+  @apply
+  text-darkBlue font-primary text-lg uppercase font-semibold mb-8
+}
+
+.plant-gallery .select-menu{
+  @apply
+  w-full border border-darkBlue mb-4 h-12 px-4 bg-transparent text-darkBlue font-primary block lg:hidden
+}
+
+.plant-gallery ul.plant-menu{
+  @apply
+  gap-4 items-center font-secondary text-base text-regularGray underline cursor-pointer font-normal
+  mt-4 mb-8 font-semibold hidden lg:flex
+}
+
+.plant-gallery ul.plant-menu li.active{
+  @apply
+  text-darkBlue
+}
+
+.plant-gallery .plant-content{
+  @apply
+  flex gap-8 flex-wrap w-full flex-col-reverse lg:flex-row
+}
+
+.plant-gallery .plant-content .plant-detail-list{
+  flex:1;
+}
+
+.plant-gallery .plant-content .plant-image{
+  flex:3;
+
+  @apply
+  flex items-center justify-center
+}
+
+.plant-gallery .plant-content .plant-image img{
+  @apply
+  max-w-full max-h-[731px] object-contain
+}
+
+.plant-gallery ul.plant-detail-list li{
+  @apply
+  text-regularGray font-secondary text-lg mb-4 relative pl-4 lg:pl-12
+}
+
+.plant-gallery ul.plant-detail-list li::before{
+  content:'';
+  
+  @apply
+  absolute left-0 w-1 h-1 bg-regularGray rounded-full top-[13px] lg:left-8
+}
